@@ -16,8 +16,7 @@
 (setq inhibit-splash-screen t)
 
 ;; 设置光标的样式为竖线
-(setq-default cursor-type 'bar)
+;;(setq-default cursor-type 'bar)
 
 ;; 启动时全屏
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
-

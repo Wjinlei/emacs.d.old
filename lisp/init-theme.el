@@ -9,9 +9,9 @@
 (setq doom-themes-enable-bold nil    ; if nil, bold is universally disabled
       doom-themes-enable-italic t) ; if nil, italics is universally disabled
 
-;; Load the theme (doom-one, doom-molokai, etc); keep in mind that each theme
+;; Load the theme (doom-one, doom-molokai, doom-vibrant, etc); keep in mind that each theme
 ;; may have their own settings.
-(load-theme 'doom-molokai t)
+(load-theme 'doom-vibrant t)
 
 ;; Enable flashing mode-line on errors
 (doom-themes-visual-bell-config)

@@ -12,7 +12,7 @@
 ;; (set-face-foreground 'linum "#CD661D")
 
 ;; 高亮显示当前行
-(global-hl-line-mode t)
+;; (global-hl-line-mode t)
 ;; (set-face-background 'hl-line "#BEBEBE")
 ;; (set-face-foreground 'hl-line "#000000")
 
@@ -121,8 +121,8 @@
 ;;                                    显示空格及其颜色配置
 ;;====----====================================================================================
 ;; 显示空格
-;;(require 'whitespace)
-;;(global-whitespace-mode t)
+(require 'whitespace)
+(global-whitespace-mode t)
 
 ;; 粉色代表超过80个字符的部分,由lines-tail 参数控制
 ;; space-mark 参数表示显示空格
@@ -132,26 +132,30 @@
 ;; spaces 下面要控制whitespace-space就必须包含这个参数
 ;; newline 下面要控制whitespace-newline就必须包含这个参数
 
-;;(setq whitespace-style
-;;      '(face
-;;        ;; trailing blanks
-;;        trailing
-;;        ;; empty lines at beginning and/or end of buffer
-;;        ;; empty
-;;        ;; line is longer `whitespace-line-column'
-;;        lines-tail
-;;        ;; tab or space at the beginning of the line according to
-;;        ;; `indent-tabs-mode'
-;;        indentation
-;;        ;; show tab as » (see `whitespace-display-mappings')
-;;        tab-mark
-;;        space-mark
-;;        spaces
-;;        ))
+(setq whitespace-style
+      '(face
+        ;; trailing blanks
+        trailing
+        ;; empty lines at beginning and/or end of buffer
+        ;; empty
+        ;; line is longer `whitespace-line-column'
+        lines-tail
+        ;; tab or space at the beginning of the line according to
+        ;; `indent-tabs-mode'
+        indentation
+        ;; show tab as » (see `whitespace-display-mappings')
+        tab-mark
+        ;; space-mark
+        spaces
+        ))
 
 ;; 设置空格字符的颜色
 ;; (set-face-attribute 'whitespace-space nil :background "black")
-;;(set-face-attribute 'whitespace-space nil :foreground "dim gray")
+;; (set-face-attribute 'whitespace-space nil :foreground "dim gray")
+
+;;自动清除行尾空格
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;;=========================================================================================
 ;;               Dired Mode 配置,Dired Mode是一个文件管理的Mode,非常方便
@@ -190,21 +194,3 @@
   (interactive)
   (goto-char (point-min))
   (while (search-forward "\r" nil t) (replace-match "")))
-
-;;=========================================================================================
-;;                   occur Mode  可以让我们搜索一个文档中所有匹配的字符串
-;;=========================================================================================
-;; 还可以在occur mode中直接修改字符串,按 e 即可编辑 按C-c C-c保存
-;; 下面的代码用于配置 Occur Mode 使其默认搜索当前被选中的或者在光标下的字符串
-(defun occur-dwim ()
-  "Call `occur' with a sane default."
-  (interactive)
-  (push (if (region-active-p)
-            (buffer-substring-no-properties
-             (region-beginning)
-             (region-end))
-          (let ((sym (thing-at-point 'symbol)))
-            (when (stringp sym)
-              (regexp-quote sym))))
-        regexp-history)
-  (call-interactively 'occur))

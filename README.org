@@ -3,24 +3,34 @@
 ** Preview
 - git
 [[file:./preview/git.png]]
-** How to Install?
+** Quick Start
 #+BEGIN_SRC sh
 mv ~/.emacs.d ~/.emacs.d.bak
 git clone --depth 1 https://github.com/Wjinlei/.emacs.d.git ~/.emacs.d
-# 克隆下来后,这里直接断网启动emacs,会自动安装离线插件包
+# Broken network installation is faster here(在这里断网安装速度更快)
 #+END_SRC
 or download the zip package directly and extract to ~/.emacs.d.
 ** Features
-- offli ne installation
-- Vim operations(Evil)
-- Git(magit)
+- offline installation
+- Vim(Evil)
+- Git integration(magit)
 - File Management(Dired)
-- Fast Search(Ag)
-  
+- Quick fuzzy search(Ag)
+
   see: https://github.com/ggreer/the_silver_searcher
-- Treeemacs
+- Project/Workspace(treeemacs)
 - Youdao
-** Supported languages
+- Pomodor
+- Auto completion(company)
+- Support programming languages
+  - Bash
+  - Python
+  - Golang
+  - Java
+- Fly syntax check
+
+** FAQ
+*** Supported languages
 - Bash
 #+BEGIN_SRC sh
 npm i -g bash-language-server
@@ -31,3 +41,11 @@ go get golang.org/x/tools/gopls@latest
 #+END_SRC
 - java
 - python
+#+BEGIN_SRC sh
+pip install autopep8
+#+END_SRC
+*** Fly Syntax Check
+- Python
+#+BEGIN_SRC sh
+pip install pylint
+#+END_SRC
