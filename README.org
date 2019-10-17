@@ -16,6 +16,7 @@ or download the zip package directly and extract to ~/.emacs.d.
 - Git(magit)
 - File Management(Dired)
 - Fast Search(Ag)
+  
   see: https://github.com/ggreer/the_silver_searcher
 - Treeemacs
 - Youdao
@@ -24,11 +25,9 @@ or download the zip package directly and extract to ~/.emacs.d.
 #+BEGIN_SRC sh
 npm i -g bash-language-server
 #+END_SRC
-- python
-  Automatic download when opening py file
 - go
 #+BEGIN_SRC sh
 go get golang.org/x/tools/gopls@latest
 #+END_SRC
 - java
-  Automatic download when opening java file
+- python
