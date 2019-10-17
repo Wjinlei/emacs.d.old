@@ -1,0 +1,14 @@
+anaconda-mode/
+auto-save-list/
+.cask/
+bookmarks
+elpa/
+org/
+places
+recentf
+eshell/
+url/
+.lsp-session-v1
+.cache/
+mspyls/
+transient/

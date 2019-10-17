@@ -1,0 +1,34 @@
+* This is my Emacs configuration
+- Friendship tips: Installation effect of disconnection is better(断网安装速度更快)
+** Preview
+- git
+[[file:./preview/git.png]]
+** How to Install?
+#+BEGIN_SRC sh
+mv ~/.emacs.d ~/.emacs.d.bak
+git clone --depth 1 https://github.com/Wjinlei/.emacs.d.git ~/.emacs.d
+# 克隆下来后,这里直接断网启动emacs,会自动安装离线插件包
+#+END_SRC
+or download the zip package directly and extract to ~/.emacs.d.
+** Features
+- offli ne installation
+- Vim operations(Evil)
+- Git(magit)
+- File Management(Dired)
+- Fast Search(Ag)
+  see: https://github.com/ggreer/the_silver_searcher
+- Treeemacs
+- Youdao
+** Supported languages
+- Bash
+#+BEGIN_SRC sh
+npm i -g bash-language-server
+#+END_SRC
+- python
+  Automatic download when opening py file
+- go
+#+BEGIN_SRC sh
+go get golang.org/x/tools/gopls@latest
+#+END_SRC
+- java
+  Automatic download when opening java file
