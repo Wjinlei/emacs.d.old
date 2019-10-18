@@ -94,15 +94,15 @@
 ;;============================================================================================
 ;;                                           别名表
 ;;============================================================================================
-(setq-default abbrev-mode t)
+;; (setq-default abbrev-mode t)
 ;; 保存时将缩写配置写入缩写文件
-(setq save-abbrevs 'silent)
+;; (setq save-abbrevs 'silent)
 ;; 定义缩写文件的位置
-(setq abbrev-file-name "~/.emacs.d/abbrev_defs") ;; 设置缩写文件存放地址
+;; (setq abbrev-file-name "~/.emacs.d/abbrev_defs") ;; 设置缩写文件存放地址
 ;; 设置别名,当输入wjl按空格,自动替换成wangjl,输入wjl/时自动替换为wangjl/
-(define-abbrev-table 'global-abbrev-table '(
-                                            ("wjl" "Wangjl")
-                                            ))
+;; (define-abbrev-table 'global-abbrev-table '(
+;;                                            ("wjl" "Wangjl")
+;;                                            ))
 
 ;;============================================================================================
 ;;                                        org-mode配置
