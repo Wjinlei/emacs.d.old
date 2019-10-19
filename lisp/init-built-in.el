@@ -12,9 +12,9 @@
 ;; (set-face-foreground 'linum "#CD661D")
 
 ;; 高亮显示当前行
-;; (global-hl-line-mode t)
-;; (set-face-background 'hl-line "#BEBEBE")
-;; (set-face-foreground 'hl-line "#000000")
+(global-hl-line-mode t)
+(set-face-background 'hl-line "#BEBEBE")
+(set-face-foreground 'hl-line "#000000")
 
 ;; 高亮显示选中的区域
 (transient-mark-mode t)

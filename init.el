@@ -14,6 +14,7 @@
 (require 'init-built-in)
 (require 'init-company)
 (require 'init-lsp)
+(require 'init-treemacs)
 (require 'init-web)
 (require 'init-javascript)
 (require 'init-python)

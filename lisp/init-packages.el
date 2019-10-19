@@ -87,6 +87,10 @@
                           lsp-java
                           ;; 目录树
                           lsp-treemacs
+                          treemacs-evil
+                          treemacs-icons-dired
+                          treemacs-magit
+                          treemacs-projectile
                           helm-lsp
                           ;; 代码检查器
                           flycheck
@@ -102,6 +106,7 @@
   (dolist (pkg wangjl/packages)
     (when (not (package-installed-p pkg))
       (package-install pkg))))
+
 
 ;;========================================================================================
 ;;                                   全局开启语法检查
