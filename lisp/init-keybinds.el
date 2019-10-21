@@ -38,5 +38,6 @@
 (define-key global-map (kbd "C-x F F") 'indent-region-or-buffer)
 (define-key global-map (kbd "C-x F D") 'remove-dos-eol)
 ;; 键前缀Ctrl+c
+(define-key global-map (kbd "C-c C-c") 'eshell)
 
 ;; 键前缀Ctrl+h
