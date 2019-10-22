@@ -51,7 +51,7 @@
 (save-place-mode 1)
 
 ;; 设置TAB的默认宽度
-(setq default-tab-width 4)
+(setq-default tab-width 4)
 (setq-default indent-tabs-mode nil);
 
 ;; 在状态条显示当前光标在哪个函数体内部
@@ -142,11 +142,11 @@
         lines-tail
         ;; tab or space at the beginning of the line according to
         ;; `indent-tabs-mode'
-        indentation
+        ;; indentation
         ;; show tab as » (see `whitespace-display-mappings')
-        tab-mark
+        ;; tab-mark
         ;; space-mark
-        spaces
+        ;; spaces
         ))
 
 ;; 设置空格字符的颜色
