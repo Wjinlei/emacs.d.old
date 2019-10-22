@@ -1,11 +1,8 @@
-;; golang
-
-;; 设置tab宽度为4个空格
-;; (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
-
-(with-eval-after-load 'go
+;; Golang
+(with-eval-after-load 'go-mode
   ;; 配置开启golang语法检查
   (add-hook 'go-mode-hook 'flycheck-mode)
-)
+  (add-hook 'before-save-hook 'gofmt-before-save)
+  )
 
 (provide 'init-go)
