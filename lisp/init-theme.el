@@ -11,7 +11,7 @@
 
 ;; Load the theme (doom-one, doom-molokai, doom-vibrant, etc); keep in mind that each theme
 ;; may have their own settings.
-(load-theme 'doom-molokai t)
+(load-theme 'doom-one t)
 
 ;; Enable flashing mode-line on errors
 (doom-themes-visual-bell-config)
