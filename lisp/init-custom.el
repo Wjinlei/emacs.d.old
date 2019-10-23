@@ -4,7 +4,8 @@
 ;;                                        设置字体相关
 ;;===============================================================================================
 ;; 设置默认字体
-(set-default-font "Ubuntu Mono-16")
+;; (set-default-font "Ubuntu Mono-16")
+(set-default-font "Consolas-15")
 
 ;;===============================================================================================
 ;;                                        设置变量相关
@@ -16,7 +17,7 @@
  ;; If there is more than one, they won't work right.
  '(initial-scratch-message ";; Welcome back Happy hacking!!!")
 )
- 
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
