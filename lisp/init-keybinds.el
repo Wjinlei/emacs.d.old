@@ -5,6 +5,17 @@
 ;; 键前缀空格
 (setq evil-leader/leader "SPC")
 (evil-leader/set-key
+  ;; Move Window
+  "0"   'select-window-0
+  "1"   'select-window-1
+  "2"   'select-window-2
+  "3"   'select-window-3
+  "4"   'select-window-4
+  "5"   'select-window-5
+  "6"   'select-window-6
+  "7"   'select-window-7
+  "8"   'select-window-8
+  "9"   'select-window-9
   ;; Other
   ":"   'helm-M-x                     ;;增强M-x
   )
@@ -37,6 +48,10 @@
 (define-key global-map (kbd "C-x p x") 'lsp-workspace-blacklist-remove)
 (define-key global-map (kbd "C-x F F") 'indent-region-or-buffer)
 (define-key global-map (kbd "C-x F D") 'remove-dos-eol)
+(define-key global-map (kbd "C-x k") 'nil)
+(define-key global-map (kbd "C-x k p") 'projectile-kill-buffers)
+(define-key global-map (kbd "C-x k k") 'kill-buffer)
+
 ;; 键前缀Ctrl+c
 (define-key global-map (kbd "C-c C-c") 'eshell)
 
