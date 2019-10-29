@@ -33,7 +33,7 @@
 (define-key global-map (kbd "C-x s s") 'helm-do-ag-project-root)
 (define-key global-map (kbd "C-x s g") 'counsel-git)
 (define-key global-map (kbd "C-x s f") 'helm-imenu)
-(define-key global-map (kbd "C-x s r") 'iedit-mode)
+(define-key global-map (kbd "C-x s i") 'iedit-mode)
 (define-key global-map (kbd "C-x C-r") 'nil)
 (define-key global-map (kbd "C-x C-r") 'recentf-open-files)
 (define-key global-map (kbd "C-x ?") 'youdao-dictionary-search)
