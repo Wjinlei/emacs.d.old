@@ -4,7 +4,7 @@
 ;;                        GUI模式下才有用,非GUI模式不要开启,会报错
 ;;========================================================================================
 ;; 设置标题
-(setq frame-title-format '("Oh My Emacs - %b")
+(setq frame-title-format '("sEmacs - %b")
       icon-title-format frame-title-format)
 
 ;; 设置背景色
