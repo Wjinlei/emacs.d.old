@@ -44,7 +44,7 @@
 (define-key global-map (kbd "C-x P x") 'customize-group)
 (define-key global-map (kbd "C-x p a") 'lsp-workspace-folders-add)
 (define-key global-map (kbd "C-x p r") 'lsp-workspace-folders-remove)
-(define-key global-map (kbd "C-x p s") 'lsp-workspace-folders-switch)
+(define-key global-map (kbd "C-x p s") 'lsp-workspace-folders-open)
 (define-key global-map (kbd "C-x p x") 'lsp-workspace-blacklist-remove)
 (define-key global-map (kbd "C-x F F") 'indent-region-or-buffer)
 (define-key global-map (kbd "C-x F D") 'remove-dos-eol)
