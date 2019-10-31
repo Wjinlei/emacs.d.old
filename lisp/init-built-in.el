@@ -180,7 +180,11 @@
 ;; (defined-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
 ;; 延迟加载 (使用延迟加载可以使编辑器加载速度有所提升)
 (with-eval-after-load 'dired
-  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
+  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
+
+  (when (string= system-type "darwin")
+  (setq dired-use-ls-dired nil))
+  )
 
 ;; dired-x 可以让我们直接打开当前目录的Dired Mode,快捷键是C-x C-j
 (require 'dired-x)
