@@ -25,5 +25,5 @@
  ;; If there is more than one, they won't work right.
  '(company-tooltip-selection ((t (:background "steel blue" :weight normal))))
  '(iedit-occurrence ((t (:inherit region))))
- '(linum ((t (:inherit default :foreground "chocolate" :strike-through nil :underline nil :slant italic :weight normal))))
+ '(linum ((t (:inherit default :foreground "chocolate" :strike-through nil :underline nil :weight normal))))
  '(show-paren-match ((t (:background "green" :foreground "#e74c3c" :weight normal)))))
