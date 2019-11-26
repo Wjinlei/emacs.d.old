@@ -25,7 +25,6 @@
   - Python
   - Golang
 - Fly syntax check
-- Markdown Preview(grip)
 ## Installation
 ### Supported languages
 - Bash<br/>
@@ -39,6 +38,3 @@
 ### Fly Syntax Check
 - Python<br/>
 `pip install pylint`
-### Markdown Preview
-- grip<br/>
-`pip install grip`
