@@ -2,7 +2,7 @@
 - Friendship tips: Installation effect of disconnection is better(支持断网安装,断网安装速度更快)
 ## Preview
 - git
-[[file:./preview/git.png]]
+![preview]("./preview/git.png")
 ## Quick Start
 `mv ~/.emacs.d ~/.emacs.d.bak`<br/>
 `git clone --depth 1 https://github.com/Wjinlei/.emacs.d.git ~/.emacs.d`<br/>
