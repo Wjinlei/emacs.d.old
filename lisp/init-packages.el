@@ -185,4 +185,4 @@
 ;; A GitHub username for API authentication
 (setq grip-github-user "Wjinlei")
 ;; A GitHub password or auth token for API auth
-(setq grip-github-password "")
+(setq grip-github-password "8f068c9a78a20761bc339dfa5931dfe9b9609dff")
