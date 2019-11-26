@@ -38,6 +38,7 @@
                           emmet-mode
                           python-mode
                           go-mode
+                          grip-mode
                           ;; Evil
                           evil
                           evil-leader
@@ -174,3 +175,14 @@
 ;;=========================================================================================
 ;;   如果是MAC OSX 系统,想要在finder中打开当前文件,直接输入M-x reveal-in-osx-finder即可
 ;;=========================================================================================
+
+
+;;=========================================================================================
+;;                            Github风格的Markdown预览插件
+;;=========================================================================================
+(add-hook 'markdown-mode-hook #'grip-mode)
+(add-hook 'org-mode-hook #'grip-mode)
+;; A GitHub username for API authentication
+(setq grip-github-user "Wjinlei")
+;; A GitHub password or auth token for API auth
+(setq grip-github-password "")
